@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Tax 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Real income: ");
+		float income = sc.nextFloat();
+
+		if (income >= 0 &&income<=1200000)
+		{
+			System.out.println("No Tax, Aur Paisa Kamao! ");
+		}
+		else if (income>1200000&&income<=1600000)
+		{
+			System.out.println("pay the tax rs: "+((income*15)/100) + " \nyour income rs : "+ (income-(income*15)/100));
+		}
+		else if (income>1600000&&income<=2000000)
+		{
+			System.out.println("Pay the tax rs: "+((income*20)/100)+" \nyour income is: "+(income-(income*20)/100));
+		}
+		else if (income>2000000&&income<=2400000)
+		{
+			System.out.println("Pay the tax rs: "+((income*25)/100)+" \nyour income is: "+(income-(income*25)/100));
+		}
+		else if (income>2400000)
+		{
+			System.out.println("Pay the tax rs: "+((income*30)/100)+" \nyour income is: "+(income-(income*30)/100));
+		}
+		else 
+			System.out.println("Invalid Income!!"); 
+	}
+}

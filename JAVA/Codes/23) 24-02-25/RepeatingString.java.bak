@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class RepeatingString
+{
+	public static void main(String[] args)
+	{
+		System.out.print("Enter the String: ");
+		String str=new Scanner(System.in).nextLine().toUpperCase();
+		char repeated=1;int max=0;
+		for(char c='A';c<='Z';c++)
+		{
+			int cnt=0;
+			for(int i=0;i<str.length();i++)
+			{
+				char x=str.charAt(i);
+				if(c==x){
+					cnt++;
+				}
+			}
+			if(max<cnt){
+				max=cnt;
+				repeated=c;
+			}
+		}
+		System.out.println("Repeated String is: '"+repeated+"' with frequency: '"+max+"'");
+	}
+}

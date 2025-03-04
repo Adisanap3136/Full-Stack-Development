@@ -1,0 +1,14 @@
+class Increment2 
+{
+	public static void main(String[] args) 
+	{
+		int i = 5;
+		i= i--;           //here we substitute value of i then update i but we assign the subsitituted value to the i ,so the substituted value will be assign . dont assign updated value.  //op->5
+		i= i++;            //op->5
+		System.out.println(i);     //op->5
+
+		int z = 10;
+		z--;                  //here the decrement operator perform and updated value in variable,here the z-- is assign to variable this reason the updated value is printing.            //op -> 9
+		System.out.println(z);
+	}
+}

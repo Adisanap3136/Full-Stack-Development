@@ -1,0 +1,17 @@
+class VariableAccessibility2
+{
+	public static void main(String[] args)
+	{
+		int a=10;
+		System.out.println(a);
+		test();
+	}
+	public static void test()
+	{
+		String a="Qspider!";
+		System.out.println(a);
+	}
+}
+/*
+here we can create same variable name in different diffrent method block.
+*/

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Prime2 
+{
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter the num: ");
+		long num=new Scanner(System.in).nextLong();
+		for (long i=2;i<num;i++)
+		{
+			if(num%i==0)
+			{
+				//System.out.println("num is NOT prime: "+num);
+			}
+			if(num%i==0)
+			{
+				break;
+			}
+			else
+			{
+				System.out.println("Prime: "+num);
+				break;
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+class Example1 
+{
+	public static void main(String[] args) 
+	{
+		int i=1;
+		int cnt=0;
+		do{
+			if (i%2!=0)
+			{
+				if (i%i!=0)
+				{
+					System.out.println(i);
+					cnt++;
+				}
+			}
+			i++;
+		}while(i<=100);
+		System.out.println("\nCount is: "+cnt);
+	}
+}

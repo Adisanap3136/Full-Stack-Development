@@ -1,0 +1,28 @@
+class GoodPrimeOrNot
+{
+	public static void main(String[] args)
+	{
+		int num=17;
+		outerLoop:
+		for(int k=num;k>0;k/=10)
+		{
+			int dgt=k%10;
+			boolean flag=true;
+			if(dgt<2){
+				flag =false;
+				break outerLoop;
+			}
+			for(int i=2;i<dgt;i++)
+			{
+				if(dgt%i==0){
+					flag =false;
+					break outerLoop;
+				}
+			}
+			if(flag){
+				System.out.println(num+" it is a PRIME NUMBER!");
+				break;
+			}
+		}
+	}
+}

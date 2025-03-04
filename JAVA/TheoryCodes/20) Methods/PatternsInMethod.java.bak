@@ -1,0 +1,59 @@
+class PatternsInMethod
+{
+	public static void main(String[] args)
+	{
+		primeOrNot(7);
+		primeRange(100);
+		evenOrNot(1);
+	}
+	public static void primeOrNot(int a)
+	{
+		boolean flag=true;
+		for(int i=2;i<a;i++)
+		{
+			if(a%i==0){
+				flag=false;
+				break;
+			}
+		}
+		if(flag)
+			System.out.println(a+" is Prime");
+		else
+			System.out.println(a+" is NOT Prime");
+	}
+
+	public static void primeRange(int a)
+	{
+		System.out.println("The Number range 1 to: "+a);
+		for(int i=2;i<=a;i++)
+		{
+			boolean flag=true;
+			for(int j=2;j<i;j++)
+			{
+				if(i%j==0){
+					flag=false;
+					break;
+				}
+			}
+			if(flag)
+				System.out.print(i+"  ");
+		}
+	}
+
+	public static void evenOrNot(int a)
+	{
+		System.out.println();
+		if(a%2==0)
+			System.out.println(a+" is Even Number");
+		else
+			System.out.println(a+" is Odd Number");
+	}
+
+	public static void Power(int num,int p)
+	{
+		int pow=1;
+		for(int i=1;i<=p;i++)
+			pow*=num;
+		System.out.println(num+"^"+p+" = "+pow);
+	}
+}

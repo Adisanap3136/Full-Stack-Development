@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Bouncynumber
+{
+	public static void main(String [] args)
+	{
+		System.out.print("Enter the Num: ");
+		int num=new Scanner(System.in).nextInt();
+		boolean flag1 =true,flag2=true;
+		while(num>=10)
+		{
+			if((num%10)<((num/10)%10))
+			{
+				flag1 =false;
+			}
+			if((num%10)>((num/10)%10))
+			{
+				flag2 =false;
+			}
+			num/=10;
+		}
+		if(flag1==flag2)
+			System.out.println("not bouncy number");
+		else
+			System.out.println("bouncy number");
+	}
+}

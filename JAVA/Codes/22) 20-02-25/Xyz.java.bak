@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class BouncyNumber
+{
+	public static void incrementNumCheck(int n)
+	{
+		int temp=n,max=0,cnt=0;
+		for(int i=n;i>0;i/=10){
+			int rem=i%10;
+			cnt++;
+			if(max<rem){
+				max=rem;
+			}
+		}
+		System.out.println("max dgt: "+max);
+	}
+	public static void decrementNumCheck(int m)
+	{
+		int temp=m,min=9,cnt=0;
+		for(int i=m;i>0;i/=10){
+			int rem=i%10;
+			cnt++;
+			if(min>rem){
+				min=rem;
+			}
+		}
+		System.out.println("small dgt: "+min);
+	}
+	public static void main(String[] args)
+	{
+		System.out.print("Enter the num: ");
+		int num=new Scanner(System.in).nextInt();
+		incrementNumCheck(num);
+		decrementNumCheck(num);
+	}
+}

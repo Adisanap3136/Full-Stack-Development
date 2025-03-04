@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class BinaryToDecimal
+{
+	public static void main(String[] args)
+	{
+		System.out.print("Enter the Num: ");
+		long num= new Scanner(System.in).nextInt();
+		long temp=num;
+		long pow=1,dec=0;
+		while(temp>0)
+		{
+			if((temp%10)==1)
+				dec+=pow;
+			pow*=2;
+			System.out.println("pow: "+pow+" ");
+			temp/=10;
+		}
+		System.out.println(num+" in Decimal: "+dec);
+	}
+}

@@ -1,0 +1,16 @@
+class MethodCallStatement
+{
+	public static void main(String[] args)
+	{
+		System.out.println("From main method");
+		test();  //method call statement(here the test is static method)
+	}
+	public static void test()
+	{
+		System.out.println("In test() method!");
+	}
+}
+//If we not call method then the method not execute.
+//in this program i create a test method and using method call statement i call the method .
+//the method is a static method so only write this test() then the method will run easily
+//this is no argument method

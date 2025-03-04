@@ -1,0 +1,14 @@
+class M1
+{
+	public static void main(String[] args)
+	{
+	public static int res;
+		addNum(1,1);
+		System.out.println(res);
+	}
+	public static int addNum(int a,int b)
+	{
+		res=a+b;
+		return res;
+	}
+}

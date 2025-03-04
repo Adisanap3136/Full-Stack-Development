@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class PinVerificationPhone          
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		short storedPin=3136;
+		byte attempts=0;
+		do
+		{
+			System.out.print("Enter your Pin: ");
+			int pin= sc.nextInt();
+			if(storedPin==pin)
+			{
+				System.out.println("Phone Unlocked!");
+				break;
+			}
+			else
+			{
+				System.out.println("Wrong Pin");
+				System.out.println("You have only "+(3-attempts)+" attempts");
+			}
+			attempts++;
+		}while(attempts<3);
+		if (attempts==3)
+		{
+			//System.out.println("Max attempts reached!");
+			System.out.println(attempts);
+		}
+	}
+}
