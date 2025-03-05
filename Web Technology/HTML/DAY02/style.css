@@ -1,0 +1,25 @@
+#h1{
+    color: red;
+    font-size: 70px;
+    background-color: aqua;
+    border: 10px double black ;
+}
+#h2{
+    color: goldenrod;
+    font-size: 50px;
+    background-color: brown;
+}
+#h3{
+    color: red;
+    font-size: 60px;
+    background-color: wheat;
+}
+.head1{
+    border: dotted;
+    background-color: cornflowerblue;
+    font-size: 70px;
+}
+p{
+    color: skyblue;
+    background-color: black;
+}
