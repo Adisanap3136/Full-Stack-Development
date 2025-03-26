@@ -1,0 +1,35 @@
+class ArmstrongNumber
+{
+	public static void main(String[] args)
+	{
+		/*for(int i=1;i<=1000;i++)
+			if(isArmstrong(i))
+				System.out.println(i);
+				*/
+				System.out.println(isArmstrong(88593477));
+	}
+	public static boolean isArmstrong(int num)
+	{
+		int ct=len(num);
+		int sum=0;
+		for(int i=num;i>0;i/=10){
+			//sum+=power(i%10,len(num));
+			sum+=power(i%10,ct);
+		}
+		return num==sum;
+	}
+	public static int len(int num)
+	{
+		int cnt=0;
+		for(int i=num;i>0;i/=10)
+			cnt++;
+		return cnt;
+	}
+	public static int power(int base ,int raise)
+	{
+		int pow=1;
+		for(int i=1;i<=raise;i++)
+			pow*=base;
+		return pow;
+	}
+}

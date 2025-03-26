@@ -1,0 +1,16 @@
+class Recursion6
+{
+	public static void main(String[] args)
+	{
+		System.out.println(isPrime(111111111,2));
+	}
+	public static boolean isPrime(int num,int den)
+	{
+		if(num==den)
+			return true;
+		else if(num%den==0)
+			return false;
+		return isPrime(num,++den);
+	}
+}
+//Using the recursion find the prime number.

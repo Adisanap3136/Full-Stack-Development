@@ -99,7 +99,7 @@ class MethodImplementation
 	public static void reverseString(String ch)
 	{
 		//this code reverse the String
-		String rev="";
+		String rev="";//xyz
 		for(int i=0;i<ch.length();i++)
 		{
 			char c =ch.charAt(i);

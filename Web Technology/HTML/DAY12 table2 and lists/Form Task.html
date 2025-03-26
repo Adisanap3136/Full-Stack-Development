@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Application form</h3>
+    <form action="">
+      <fieldset>
+        <legend>Contact Detail</legend>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required /><br />
+        <label for="tel">Telephone</label>
+        <input type="tel" name="telephone" id="tel" required /><br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </fieldset>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="age">*Age</label>
+        <input type="tel" name="age" id="age" placeholder="24+" minlength="24"  required/><br />
+        <label for="age">Gender</label>
+        <select name="gender" id="">
+          <option value="female">Female</option>
+          <option value="Male">Male</option>
+        </select>
+        <br />
+        <label for="feedback"
+          >What did you know first know wanted to be a zoo keeper</label>
+        <textarea name="feedback" id=""></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Pick Your Favourite Animal</legend>
+        <input type="checkbox" name="Zebra" id="Zebra" />
+        <label for="Zebra">Zebra</label>
+        <input type="checkbox" name="Lion" id="Lion" />
+        <label for="Lion">Lion</label>
+        <input type="checkbox" name="Tiger" id="Tiger" />
+        <label for="Tiger">Tiger</label>
+        <input type="checkbox" name="Cat" id="Cat" />
+        <label for="Cat">Cat</label>
+      </fieldset>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>

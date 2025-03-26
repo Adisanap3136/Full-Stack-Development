@@ -1,0 +1,28 @@
+class Static_Block1
+{
+	static
+	{
+		System.out.println("From Static Block1");
+	}
+
+	public static void main(String[] args)
+	{
+		System.out.println("From Main Block");
+	}
+
+	static
+	{
+		System.out.println("From Static Block2");
+	}
+
+	static
+	{
+		System.out.println("From Static Block3");
+	}
+}
+/*
+From Static Block1
+From Static Block2
+From Static Block3
+From Main Block
+*/

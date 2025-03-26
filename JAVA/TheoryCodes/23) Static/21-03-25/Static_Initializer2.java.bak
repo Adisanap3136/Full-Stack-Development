@@ -1,0 +1,7 @@
+class Static_Initializer2
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Static_Initializer1.name);
+	}
+}

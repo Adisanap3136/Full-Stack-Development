@@ -1,0 +1,19 @@
+class Recursion2
+{
+	//public static void main(String ... args)
+	public static void main(String [] args)
+	{
+		System.out.println(reverseNum(1234,0));
+	}
+	public static void reverseNum(int num,int rev)
+	{
+		if(num!=0){
+			rev=rev*10+(num%10);
+			reverseNum(num/10,rev);
+		}
+		else if(num==0)
+			System.out.println(rev);
+			return ;
+	}
+}
+//here we done reverse the number using recursion

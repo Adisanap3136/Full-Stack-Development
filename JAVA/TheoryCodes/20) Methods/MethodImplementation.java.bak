@@ -3,7 +3,7 @@ class MethodImplementation
 	public static void main(String[] args)
 	{
 		//these are all the method calling statements,and these all the method are parameterised method
-		primeOrNot(2.2);
+		primeOrNot(22);
 		primeRange(50);
 		evenOrNot(2);
 		power(2,5);

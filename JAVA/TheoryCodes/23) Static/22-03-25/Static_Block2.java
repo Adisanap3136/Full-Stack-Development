@@ -1,0 +1,20 @@
+class Static_Block2
+{
+	static
+	{
+		test();
+	}
+
+	public static void main(String[] args)
+	{
+		System.out.println("from main");
+	}
+
+	public static void test()
+	{
+		System.out.println("form test");
+	}
+}
+
+//form test
+//from main

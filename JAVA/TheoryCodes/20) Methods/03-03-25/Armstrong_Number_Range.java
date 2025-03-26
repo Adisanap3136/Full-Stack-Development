@@ -1,0 +1,35 @@
+class Armstrong_Number_Range
+{
+	public static void main(String[] args)
+	{
+		//System.out.println(isArmstrongNumber(153));
+		for(int i =0;i<1000;i++)
+			if(isArmstrongNumber(i))
+				System.out.println(i);
+	}
+	public static boolean isArmstrongNumber(int num)
+	{
+		int sum=0;
+		for(int i=num;i!=0;i/=10)
+		{
+			sum+=power((i%10),count(num));
+		}
+		return sum==num;
+	}
+	public static int count(int num)
+	{
+		int cnt=0;
+		while(num!=0){
+			num/=10;
+			cnt++;
+		}
+		return cnt;
+	}
+	public static int power(int base,int raise)
+	{
+		int pow=1;
+		for(int i=1;i<=raise;i++)
+			pow*=base;
+		return pow;
+	}
+}

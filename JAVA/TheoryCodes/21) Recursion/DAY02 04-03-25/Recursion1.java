@@ -1,0 +1,28 @@
+class Recursion1
+{
+	public static void main(String[] args)
+	{
+		forLoop(1,10);
+		backLoop(10,1);
+	}
+	public static int forLoop(int start,int end)
+	{
+		if(start<=end){
+			System.out.println(start+" ");
+			return forLoop(++start,end);
+		}
+		else
+			return 0;
+	}
+	public static int backLoop(int start,int end)
+	{
+		if(start>=end){
+			System.out.println(start+" ");
+			return backLoop(--start,end);
+		}
+		else
+			return 0;
+	}
+}
+
+//here i done a forward counting and backward counting without using loops statements it is a Recursive approach

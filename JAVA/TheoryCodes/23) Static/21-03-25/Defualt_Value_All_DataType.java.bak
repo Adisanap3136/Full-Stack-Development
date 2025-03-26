@@ -1,0 +1,67 @@
+class Defualt_Value_All_DataType
+{
+	static byte b;
+	static short s;
+	static char c;
+	static int i;
+	static long l;
+	static float f;
+	static double d;
+	static boolean bl;
+	static String str;
+
+	static Integer in;
+	static Double db;
+	static Character cr;
+	static Long lg;
+	static Float fp;
+	static Byte bb;
+	static Short ss;
+	static Boolean bn;
+
+	public static void main(String[] args)
+	{
+		System.out.println("byte: "+b);
+		System.out.println("short: "+s);
+		System.out.println("char:"+c);
+		System.out.println("int: "+i);
+		System.out.println("long: "+l);
+		System.out.println("float: "+f);
+		System.out.println("double: "+d);
+		System.out.println("boolean: "+bl);
+		System.out.println("String: "+str);
+
+	/*	System.out.println("byte: "+bb);
+		System.out.println("short: "+ss);
+		System.out.println("char:"+cr);
+		System.out.println("int: "+in);
+		System.out.println("long: "+lg);
+		System.out.println("float: "+fp);
+		System.out.println("double: "+db);
+		System.out.println("boolean: "+bn);
+		System.out.println("String: "+str);
+
+		op: Non Primitive
+			byte: null
+			short: null
+			char:null
+			int: null
+			long: null
+			float: null
+			double: null
+			boolean: null
+			String: null
+	*/
+	}
+}
+/*op: Primitive
+byte: 0
+short: 0
+char:
+int: 0
+long: 0
+float: 0.0
+double: 0.0
+boolean: false
+String: null
+*/

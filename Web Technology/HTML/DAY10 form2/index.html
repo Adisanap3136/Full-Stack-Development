@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Radio Button, textArea and DropDown</legend>
+            <!-- Give same name for every name attribute for single option slection -->
+            <h1>Radio</h1>     
+            <input type="radio" name="language" id="Marathi">
+            <label for="Marathi">Marathi</label>
+            <input type="radio" name="language" id="Hindi">
+            <label for="Hindi">Hindi</label>
+            <input type="radio" name="language" id="English">
+            <label for="English">English</label>
+            <button>Submit</button>
+            <hr>
+            <h3>Gender</h3>
+            <input type="radio" name="Gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Gender" id="other">
+            <label for="other">Other</label>
+            <button>Submit</button>
+            <hr>
+
+            <h3>Checkbox</h3>
+            <input type="checkbox" name="language" id="Mar">
+            <label for="Mar">Marathi</label>
+            <input type="checkbox" name="language" id="Hin">
+            <label for="Hin">Hindi</label>
+            <input type="checkbox" name="language" id="Eng">
+            <label for="Eng">English</label>
+            <button>Submit</button>
+            <hr>
+
+            <h3>textarea</h3>
+            <label for="textarea">Write your feedback : </label>
+            <textarea name="feedback" id="textarea" rows="10" cols="50"></textarea>
+            <hr>
+
+            <h3>DropDown</h3> 
+            <!-- Here we use value for making key value area -->
+            <h3>Select your State</h3>
+            <select name="State" id="State">
+                <option value="">Select State</option>
+                <option value="Maharashtra">Maharashtra</option>            
+                <option value="Hyderabad">Hyderabad</option>            
+                <option value="Gujrat">Gujrat</option>            
+                <option value="Tamilnadu">Tamilnadu</option>            
+                <option value="Goa">Goa</option>            
+            </select>
+            <hr>
+            <h3>Select Your Favourite Car</h3>
+            <select name="car" id="Car">
+                <option value="">Select car</option>
+                <option value="DZIRE">DZIRE</option>
+                <option value="Virtus">Virtus</option>
+                <option value="Slavia">Slavia</option>
+                <option value="BMW">BMW</option>
+                <option value="Harrier">Harrier</option>
+            </select>
+
+            <hr>
+            <h3>read only disabled</h3>
+            <input type="text" value="I am a Robot" readonly>
+            <button disabled>Submit</button>
+
+            <hr>
+
+            <h3>placeholder</h3>
+            <input type="text" name="" id="" placeholder="Mobile Number" value="+91 " maxlength="14" >
+            <br>
+            <label for="">Adhar Number</label>
+            <input type="text" minlength="12" maxlength="12">
+
+            <hr>
+
+            <h3>Autofocus accesskey</h3>
+            <input type="text" name="" id="" placeholder="User Name" autofocus accesskey="a"><br><br>
+            <input type="text" name="" id="" placeholder="Password" accesskey="b"><br><br>
+            <button>Submit</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

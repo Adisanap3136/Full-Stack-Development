@@ -1,0 +1,20 @@
+class Recursion8
+{
+	public static void main(String[] args)
+	{
+		for(int start =2;start<=100;start++)
+		{
+			if(isPrime(start))
+				System.out.println(start);
+		}
+	}
+	public static boolean isPrime(int num)
+	{
+		for(int i=2;i<num;i++)
+		{
+			if(num%i==0)
+				return false;
+		}
+			return true;
+	}
+}

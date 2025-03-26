@@ -1,0 +1,31 @@
+class DisceriumNumber
+{
+	public static void main(String[] args)
+	{
+		len(89);
+	}
+	public static int len(int num)
+	{
+		int cnt=0;
+		for(int i=num;i>0;i/=10)
+				cnt++;
+		System.out.println(pow(num,cnt));
+		return cnt;
+	}
+	public static boolean pow(int num ,int cnt)
+	{
+		int sum=0;
+		for(int i=num;i>0;i/=10)
+		{
+			for(int j=1;j<=cnt;j++)
+			{
+				sum+=(i%10)*(i%10);
+				System.out.println("cnt"+cnt);
+				System.out.println("i"+i);
+				System.out.println("sum"+sum);
+			}
+			cnt--;
+		}
+		return num==sum;
+	}
+}
