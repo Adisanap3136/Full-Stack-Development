@@ -1,0 +1,9 @@
+p+div~section{
+    background-color: aqua;
+}
+span~p{
+    background-color: red;
+}
+div+section{
+    background-color: cadetblue;
+}

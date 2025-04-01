@@ -1,0 +1,41 @@
+p::first-letter{
+    font-size: 50px;
+}
+p::first-line{
+    background-color: aqua;
+}
+p::selection{
+    background-color: crimson;
+    color: aqua;
+}
+p::before{
+    content: "NEWS START";
+    background: rgb(161, 83, 83);
+    color: greenyellow;
+    font-size: 30px;
+}
+p::after{
+    content: "END NEWS";
+    color: brown;
+    background-color: violet;
+    font-size: 30px;
+}
+/* li::marker{
+    content: "😁";
+} */
+
+div>ul>li::marker{
+    content: "🥭";
+}
+div>ul>li+li::marker{
+    content: "🍎";
+}
+div>ul>li+li+li::marker{
+    content: "🍌";
+}
+div>ul>li+li+li+li::marker{
+    content: "🍉";
+}
+div>ul>li+li+li+li+li::marker{
+    content: "🍒";
+}
