@@ -1,0 +1,8 @@
+class ChainingDriver1
+{
+	public static void main(String[] args)
+	{
+		Chaining1 c1 = new Chaining1("a",1,3);
+		//c1.display();
+	}
+}

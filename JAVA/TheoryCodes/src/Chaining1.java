@@ -1,0 +1,29 @@
+class Chaining1
+{
+	String a;
+	int b;
+	int c;
+
+	Chaining1()
+	{
+	}
+
+	Chaining1(String a,int b)
+	{
+		this.a=a;
+		this.b=b;
+	}
+	Chaining1(String a, int b,int c)
+	{
+		this(a,b);
+		this.c=c;
+		System.out.println("from constructor 3");
+
+	}
+	public void display()
+	{
+		System.out.println("a "+a);
+		System.out.println("b "+b);
+		System.out.println("c "+c);
+	}
+}

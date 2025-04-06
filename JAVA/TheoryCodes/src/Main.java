@@ -1,0 +1,37 @@
+class Main {
+    static int counter = 0 ;
+    static int counter2 = 0;
+
+    {
+        System.out.println("Non-Static Block "+(++counter2));
+    }
+    {
+        System.out.println("Non-Static Block "+(++counter2));
+    }
+    {
+        System.out.println("Non-Static Block "+(++counter2));
+    }
+    static
+    {
+        System.out.println("Static Block "+(++counter));
+        new Main().display1();
+        display2();
+    }
+    static
+    {
+        System.out.println("Static Block "+(++counter));
+        new Main().display1();
+    }
+    public void display1()
+    {
+        System.out.println("Non Static Method Called");
+    }
+    public static void display2()
+    {
+        System.out.println("Static Method Called");
+    }
+    public static void main(String[] args)
+    {
+
+	}
+}

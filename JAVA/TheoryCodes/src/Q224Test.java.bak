@@ -1,0 +1,19 @@
+class Q224Test
+{
+	static int a = 100;
+	char ch = 'a';
+	public void abc()
+	{
+		System.out.println(ch);
+	}
+	public static void demo()
+	{
+		System.out.println(a);
+		Q223Test t1 = new Q223Test();
+		t1.abc();
+	}
+	public static void main(String args[])
+	{
+		demo();
+	}
+}
