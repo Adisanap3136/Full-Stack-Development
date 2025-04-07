@@ -3,7 +3,8 @@ class Static_And_nonStatic3_Driver
 	public static void main(String[] args)
 	{
 		System.out.println("Main Start");
-
+		Static_And_nonStatic3.a= 20;
+		Static_And_nonStatic3 s1 = new Static_And_nonStatic3();
 		System.out.println("Main End");
 	}
 }

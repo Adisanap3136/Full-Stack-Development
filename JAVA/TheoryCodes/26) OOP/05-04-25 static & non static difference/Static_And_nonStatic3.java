@@ -24,6 +24,7 @@ class Static_And_nonStatic3
 		System.out.println("non static start");
 		nonStaticDisplay();
 		a = 11;         // we can assigan value to the static variable from non static block
+		staticDisplay();
 		System.out.println("non static end");
 	}
 
