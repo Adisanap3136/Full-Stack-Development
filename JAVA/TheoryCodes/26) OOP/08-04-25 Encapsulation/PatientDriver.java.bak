@@ -11,7 +11,7 @@ public class PatientDriver {
 
 		System.out.println(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
 
-		PatientDetails p2 =new PatientDetails("Rani", 0, 987654321, "California,Nwe York");
+		PatientDetails p2 =new PatientDetails("Rani", -10, 987654321, "California,Nwe York");
 		System.out.println("Patient Name: "+p2.getPatientName());
 		System.out.println("Patient id: "+p2.getPid());
 		System.out.println("P phone: "+p1.getPhone());

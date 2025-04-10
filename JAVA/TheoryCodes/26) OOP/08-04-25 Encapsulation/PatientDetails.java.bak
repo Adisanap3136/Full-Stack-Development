@@ -6,7 +6,10 @@ public class PatientDetails {
 	private String phistory;
 	public PatientDetails(String patientName, int pid, long phone, String padd) {
 		this.patientName = patientName;
-		this.pid = pid;
+		if(pid>0)
+			this.pid = pid;
+		else
+			System.out.println("Wrong pid");
 		this.phone = phone;
 		this.padd = padd;
 	}
@@ -31,7 +34,7 @@ public class PatientDetails {
 	}
 	public void setHistory(String history)
 	{
-		if(!(pid==0))
+		if(pid>0)
 		{
 			phistory = history;
 			System.out.println("Patient history added successfully!");
