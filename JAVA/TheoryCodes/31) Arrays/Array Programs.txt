@@ -58,4 +58,11 @@ Arrays Program list
 IMP	-Find frequency of element imp for all algorithms
 15-07-25
 	-remove the duplicate using frequency logic
-	-remove the same element of given array from second arraay
+	-remove the same element of given array from second array
+	-intersection code ....means fetch same element which is present in both array
+	-Access unique element from both array
+	-Access only duplicate element
+	-Access only similar element from both array
+16-07-25 
+	-Bubble sort
+	-Binary search
