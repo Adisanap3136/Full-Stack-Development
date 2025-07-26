@@ -1,0 +1,46 @@
+>set the ui of sql plus proper
+SET PAGES 100 LINES 100;
+
+>degree means = number of colums which is never ever zero
+>cardinality means = number of rows
+>asterisk * = is is a special character to display all the information , wild card character
+
+>to show the table structure
+DESC BONUS;
+DESC EMP;
+DESC SALGRADE;
+DESC DEPT;
+
+>write a query to display salary from emp
+SELECT SAL FROM EMP;
+
+>list employee name , salary, job from emp table
+SELECT ENAME, SAL, JOB 
+FROM EMP;
+
+>display the employee whose salary is greater then 3000
+SELECT ENAME 
+FROM EMP WHERE SALA>=3000;
+
+>list all the information of employee
+SELECT * FROM EMP;
+
+>display all the information from dept.
+SELECT * FROM DEPT;
+
+>display all the information from salgrade table;
+SELECT * FROM SALGRADE;
+
+>write a query to display all the details of bonus table.
+SELECT * FROM BONUS;
+
+>to show all the table form database
+SELECT * FROM TAB;
+
+>write a query to display the employee name, salary and their annual salary 
+SELECT ENAME,SAL,SAL*12
+FROM EMP;
+
+>write a query to display the employee salary and remove 1000 from all employee salary
+SELECT ENAME, JOB, SAL, SAL-1000
+FROM EMP;
