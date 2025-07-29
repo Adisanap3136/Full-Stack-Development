@@ -1,0 +1,68 @@
+-- Set the SQL*Plus display environment
+SET PAGES 100 LINES 100;
+
+-- Write a query to display employee name, salary, annual salary, mid-year salary, quarterly salary, bonus, and commission bonus
+SELECT ENAME, SAL, SAL*12 AS ANNSAL, SAL*6 AS MIDSAL, SAL*3 AS QSAL, SAL*12+1000 AS BONUS, COMM*12-2000
+FROM EMP;
+
+-- Write a query to display employee name, salary, annual salary, quarterly salary, and 10% incremented salary
+SELECT ENAME, SAL, SAL*12, SAL*3, SAL*1.1
+FROM EMP;
+
+-- Write a query to display employee name, salary, annual salary, 20% increased commission, and 10% decreased salary
+SELECT ENAME, SAL, SAL*12, COMM*1.2, SAL*0.9
+FROM EMP;
+
+-- Write a query to display employee name, annual salary, and half-year salary with 6 months’ commission multiplied by 1.2
+SELECT ENAME, SAL, SAL*12, SAL*6*0.5, COMM*6*1.2
+FROM EMP;
+
+-- Write a query to display employee name and total income by adding salary and commission
+SELECT ENAME, SAL+COMM
+FROM EMP;
+
+-- Try to multiply HIREDATE with 2 (this gives error because you can't multiply a DATE with a NUMBER)
+-- Why does this query fail?
+SELECT HIREDATE * 2
+FROM EMP;
+
+-- Write a query to display hiredate plus one day
+SELECT HIREDATE+1
+FROM EMP;
+
+-- Write a query to check what 1+1 returns for every row
+SELECT 1+1 FROM EMP;
+
+-- Write a query to print the character 'A' from each row in EMP
+SELECT 'A' FROM EMP;
+
+-- Write a query to display employee name 4 times from EMP table
+SELECT ENAME, ENAME, ENAME, ENAME
+FROM EMP;
+
+-- Write a query to list all unique jobs
+SELECT DISTINCT JOB
+FROM EMP;
+
+-- Write a query to list all unique department numbers
+SELECT DISTINCT DEPTNO
+FROM EMP;
+
+-- Write a query to list all unique annual salaries
+SELECT DISTINCT SAL*12
+FROM EMP;
+
+-- Write a query to display unique job and department number combinations
+SELECT DISTINCT JOB, DEPTNO
+FROM EMP;
+
+-- Write a query to list all unique commission values
+SELECT DISTINCT COMM
+FROM EMP;
+
+-- What happens if we make a typo in DISTINCT?
+-- Try running an incorrect query with wrong spelling (DISTINICT)
+SELECT DISTINICT * FROM EMP;
+
+-- Write a query to display all distinct rows from EMP table
+SELECT DISTINCT * FROM EMP;
